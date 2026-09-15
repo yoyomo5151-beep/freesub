@@ -5,26 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-  port: 443
+  server: 104.21.98.146
+  port: 8443
   udp: true
   type: vless
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
+  uuid: 50414e45-4c5f-5a45-5553-48493148ec15
   tls: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+  servername: cgzdynepurqs.mercury061.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/48493148ec15
+    headers:
+      Host: cgzdynepurqs.mercury061.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 172.67.130.246
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: 3OQxS5h6kCscecND.ZMh9KCGos2cq55uh6qDYaa938a5UgB.wOrkERS.dEV
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vl/li1khihh3dnitjyzraemspbqvu
-    headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 139.180.220.175
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
+    path: /tr/zMUJnc0O87fJR02xzGNed?ed=2560
 - name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: 149.88.23.207
   port: 18000
@@ -41,13 +46,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: TFElG2FVqyqG
 - name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: 138.2.73.238
-  port: 50160
+  server: 149.88.23.202
+  port: 18000
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: 217.217.254.126
   port: 2053
@@ -61,7 +66,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: sg2-8sb.6121999.dpdns.org
+  server: 146.235.16.130
   port: 19825
   udp: true
   type: vless
@@ -74,77 +79,44 @@ proxies:
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: 47.129.241.226
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  server: 46.137.202.178
-  port: 12512
+  server: sg-1.gsafevpnapi.com
+  port: 20270
   udp: true
   type: vless
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  servername: www.intel.com
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
   server: 54.151.142.26
   port: 443
   udp: true
   type: hysteria2
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: speedtest.tinkoff.ru
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  server: 47.129.241.226
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 47.129.241.226
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  server: 45.131.66.61
-  port: 20001
+  server: sg1.xiaoliyu.cyou
+  port: 1933
   udp: true
-  type: vless
-  uuid: f9f0e534-e5a4-498e-89cf-9ed9494ffec3
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: sg1.xiaoliyu.cyou
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  server: support.zoom.us
-  port: 80
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  server: 91.193.58.122
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
-  server: 104.16.3.98
+  server: 104.16.10.116
   port: 443
   udp: true
   type: vless
@@ -157,21 +129,34 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 15 - xiaohe
-  server: 91.192.81.214
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  server: 3.0.111.82
+  port: 10574
   udp: true
   type: vless
-  uuid: 607801ac-dbdd-4938-a167-129015d9978e
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
-    short-id: d1742269
-  servername: www.cloudflare.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  server: 141.193.213.20
+- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 15 - xiaohe
+  server: news.zoom.us
   port: 8443
   udp: true
   type: vless
@@ -185,8 +170,42 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 16 - xiaohe
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
 - name: 🇸🇬 新加坡 (Singapore) 17 - xiaohe
-  server: 104.17.159.153
+  server: 13.212.32.171
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - xiaohe
+  server: 54.251.9.130
+  port: 24146
+  udp: true
+  type: vless
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  servername: www.intel.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 19 - xiaohe
+  server: 104.18.93.167
   port: 2053
   udp: true
   type: vless
@@ -200,76 +219,40 @@ proxies:
     path: /static/media/video-chunk.f4v
     headers:
       Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 18 - xiaohe
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - xiaohe
-  server: mszz.mangshe.xyz
-  port: 20562
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 20 - xiaohe
-  server: 54.251.224.5
-  port: 26017
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: d318cdac-0033-4b6e-98bf-35116e79c93f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cy4ePzAdSz4pqRmAXXchMIgSoSKo8qjq2qLk5805LRA
-    short-id: af1c2e33b0c7dad7
-  servername: www.amd.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 21 - xiaohe
-  server: 213.176.112.136
-  port: 5222
-  udp: true
-  type: vless
-  uuid: 8d955d71-ed5d-4f4c-ae68-42d120f06861
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  server: 3.0.111.82
-  port: 10574
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 21 - xiaohe
+  server: 91.193.58.15
+  port: 2096
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 23 - xiaohe
-  server: 3.0.111.82
-  port: 12972
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 22 - xiaohe
+  server: 138.2.73.238
+  port: 50160
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -297,7 +280,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 23 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -325,6 +307,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 23 - xiaohe
 rules:
 - MATCH,PROXIES
