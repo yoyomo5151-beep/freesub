@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
@@ -23,8 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: ee.shamanapp.online
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 185.174.135.250
   port: 443
   udp: true
   type: vless
@@ -33,10 +23,19 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
