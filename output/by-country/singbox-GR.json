@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
+      "server": "104.21.234.13",
+      "server_port": 2053,
+      "uuid": "d7d8af23-36cd-4c66-a42a-4469c177210f",
+      "tls": {
+        "enabled": true,
+        "server_name": "fancy-rain-136e.thisisalee.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiMXZFdnZOdVFvSkNWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTEuMTg2LjIxOS44MiJdfQ==",
+        "headers": {
+          "Host": "fancy-rain-136e.thisisalee.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 02 - xiaohe",
       "server": "94.241.174.157",
       "server_port": 40443,
       "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
@@ -15,7 +38,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 02 - xiaohe",
+      "tag": "🇬🇷 希腊 (Greece) 03 - xiaohe",
       "server": "185.126.238.87",
       "server_port": 2083,
       "uuid": "7668f678-faee-40cc-9b56-9c39dc773388",
@@ -37,7 +60,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 03 - xiaohe",
+      "tag": "🇬🇷 希腊 (Greece) 04 - xiaohe",
       "server": "85.90.197.220",
       "server_port": 443,
       "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
@@ -47,12 +70,32 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
           "short_id": "94acb54627612d43"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 05 - xiaohe",
+      "server": "91.186.216.100",
+      "server_port": 7005,
+      "uuid": "ac64aec6-85ee-4fc7-b34b-60a7bcf236ec",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4",
+          "short_id": ""
         }
       }
     },
@@ -63,7 +106,9 @@
         "auto",
         "🇬🇷 希腊 (Greece) 01 - xiaohe",
         "🇬🇷 希腊 (Greece) 02 - xiaohe",
-        "🇬🇷 希腊 (Greece) 03 - xiaohe"
+        "🇬🇷 希腊 (Greece) 03 - xiaohe",
+        "🇬🇷 希腊 (Greece) 04 - xiaohe",
+        "🇬🇷 希腊 (Greece) 05 - xiaohe"
       ]
     },
     {
@@ -72,7 +117,9 @@
       "outbounds": [
         "🇬🇷 希腊 (Greece) 01 - xiaohe",
         "🇬🇷 希腊 (Greece) 02 - xiaohe",
-        "🇬🇷 希腊 (Greece) 03 - xiaohe"
+        "🇬🇷 希腊 (Greece) 03 - xiaohe",
+        "🇬🇷 希腊 (Greece) 04 - xiaohe",
+        "🇬🇷 希腊 (Greece) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

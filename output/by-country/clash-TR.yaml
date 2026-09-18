@@ -5,6 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 104.20.6.153
+  port: 8880
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 139.28.240.68
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 153.52.92.81
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: 153.52.92.81
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: 91.228.227.211
+  port: 23957
+  udp: true
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: 206.1.97.61
+  port: 443
+  udp: true
+  type: vless
+  uuid: 103f65b2-c4a7-4afc-aa00-dd67b6904036
+  tls: true
+  reality-opts:
+    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
+    short-id: d7397feef49deef9
+  servername: Miro.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
   server: 156.67.63.231
   port: 443
   udp: true
@@ -17,7 +70,19 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  server: antar.cdkshop.ir
+  port: 8086
+  udp: true
+  type: vless
+  uuid: 01271baa-c5e3-4e2d-b43e-2c963c5bc21f
+  tls: true
+  reality-opts:
+    public-key: nnq5J3zXFDHUGvCza7e5CMa34oexEcXUqAfqz_YY7yo
+    short-id: 5b58b0
+  servername: pro.radeon.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -29,13 +94,40 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 139.28.240.68
-  port: 1080
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  server: tur11.zavqeron.ir
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: fafd0278-71ba-4809-8137-3c87e7d8dd58
+  tls: true
+  reality-opts:
+    public-key: t5qC-Lzm_NKsc6nQ8ORzyivswiRPlbPLK0hS4d3FxTY
+    short-id: a2eb2b8f0f0a88b1
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaohe
+  server: 139.28.240.68
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +136,15 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +153,14 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaohe
 rules:
 - MATCH,PROXIES
