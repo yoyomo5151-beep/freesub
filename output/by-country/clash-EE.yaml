@@ -28,22 +28,25 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 91.215.40.6
+  server: 217.60.182.79
   port: 443
   udp: true
-  type: vless
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  tls: true
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 5c766813929a1fdd
-  servername: id.dframe.app
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -52,77 +55,23 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 217.60.182.79
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: ee1.sferavpn.pro
   port: 443
   udp: true
   type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 85.158.108.125
-  port: 9462
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  server: 109.206.241.10
-  port: 449
+  server: 212.87.190.124
+  port: 99
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 185.174.135.250
-  port: 443
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  server: 89.125.13.149
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e8b8adc-8782-4f42-b260-81b03ab5fbb2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GtRDWsSY_OKZq0Nu0_KlBeWLM7m46EQCWFl9NVZr8jM
-    short-id: 5145ab05854122b4
-  servername: ee.sharkygames.fun
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
-  server: 45.11.27.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
-    short-id: d0aae44f
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6nQnSKAxCLJSZbg7KA94QA
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,9 +84,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,8 +96,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
 rules:
 - MATCH,PROXIES

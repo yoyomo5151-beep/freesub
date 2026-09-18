@@ -5,17 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
-  server: 64.225.65.116
-  port: 8443
+  server: 165.232.39.158
+  port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /bd/pictures?ed=2560fp=chrome
+    path: /m?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
