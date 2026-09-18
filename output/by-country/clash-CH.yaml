@@ -15,18 +15,13 @@ proxies:
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 45.90.59.15
-  port: 443
+  server: 104.165.205.42
+  port: 8443
   udp: true
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 104.165.205.40
   port: 8443
@@ -34,24 +29,8 @@ proxies:
   type: hysteria2
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: 104.165.205.42
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 151.242.2.81
   port: 443
   udp: true
@@ -64,13 +43,26 @@ proxies:
   network: ws
   ws-opts:
     path: /cdn/v3/live
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   server: 132.243.175.144
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  server: 45.90.59.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +74,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,6 +85,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
 rules:
 - MATCH,PROXIES

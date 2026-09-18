@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 83045f64-b5df-434d-a81a-8bc66bdc5cab
+  uuid: b77411ca-a4f1-4c3a-aadb-b4d9320a6dc1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -25,6 +25,7 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
@@ -39,21 +40,20 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 89.47.55.8
-  port: 8443
+  server: 78.40.195.140
+  port: 443
   udp: true
   type: vless
-  uuid: 1c4298fc-505c-7055-d362-f0bd7b57677c
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+    public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
+    short-id: 98096455d963bdbb
+  servername: www.booking.com
+  client-fingerprint: qq
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 85.204.107.174
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
@@ -85,18 +85,17 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 78.40.195.140
+  server: 89.125.147.199
   port: 443
   udp: true
   type: vless
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
-  flow: xtls-rprx-vision
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   tls: true
   reality-opts:
-    public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
-    short-id: 98096455d963bdbb
-  servername: www.booking.com
-  client-fingerprint: ios
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+    short-id: f6c7c139b9c938db
+  servername: maps.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
