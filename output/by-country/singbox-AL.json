@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "alda1.thewalkingded.life",
+      "server": "85.155.228.24",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "alda1.thewalkingded.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

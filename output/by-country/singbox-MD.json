@@ -6,6 +6,49 @@
     {
       "type": "vless",
       "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+      "server": "143.246.216.64",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 02 - xiaohe",
+      "server": "143.246.219.51",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe",
+      "server": "uk-lhr-2.blook.network",
+      "server_port": 443,
+      "uuid": "7e4a4b85-4b5c-4247-af37-d53eb1bc5706",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk-lhr-2.blook.network",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "p0MkIIxkklgPs4vJJP5Qp9RxdqgMnjmgoIt5t8g6uSU",
+          "short_id": "0d04d56e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe",
       "server": "moldova.cdn-europe.org",
       "server_port": 4443,
       "uuid": "d7c94b82-657a-4bb7-9b24-2ae566669835",
@@ -29,14 +72,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+        "🇲🇩 摩尔多瓦 (Moldova) 02 - xiaohe",
+        "🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe",
+        "🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+        "🇲🇩 摩尔多瓦 (Moldova) 02 - xiaohe",
+        "🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe",
+        "🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

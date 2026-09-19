@@ -6,33 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-      "server": "84.32.217.120",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "alpn": [
-          "networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channels/act",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe",
-      "server": "64.225.110.247",
+      "server": "64.227.67.161",
       "server_port": 2083,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -46,7 +20,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/members/detail/gif?ed=2560fp=chrome",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -54,7 +28,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 03 - xiaohe",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe",
       "server": "81.208.170.142",
       "server_port": 1500,
       "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
@@ -81,8 +55,7 @@
       "outbounds": [
         "auto",
         "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-        "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe",
-        "🇸🇦 沙特 (Saudi Arabia) 03 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe"
       ]
     },
     {
@@ -90,8 +63,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-        "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe",
-        "🇸🇦 沙特 (Saudi Arabia) 03 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

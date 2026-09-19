@@ -5,6 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  server: 143.246.216.64
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇲🇩 摩尔多瓦 (Moldova) 02 - xiaohe
+  server: 143.246.219.51
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe
+  server: uk-lhr-2.blook.network
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7e4a4b85-4b5c-4247-af37-d53eb1bc5706
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p0MkIIxkklgPs4vJJP5Qp9RxdqgMnjmgoIt5t8g6uSU
+    short-id: 0d04d56e
+  servername: uk-lhr-2.blook.network
+  client-fingerprint: random
+- name: 🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe
   server: moldova.cdn-europe.org
   port: 4443
   udp: true
@@ -23,11 +54,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe
 rules:
 - MATCH,PROXIES

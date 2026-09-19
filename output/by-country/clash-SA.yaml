@@ -5,22 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: 84.32.217.120
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
-  server: 64.225.110.247
+  server: 64.227.67.161
   port: 2083
   udp: true
   type: vless
@@ -31,10 +16,10 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /members/detail/gif?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇦 沙特 (Saudi Arabia) 03 - xiaohe
+- name: 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
   server: 81.208.170.142
   port: 1500
   udp: true
@@ -56,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
   - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
-  - 🇸🇦 沙特 (Saudi Arabia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +48,5 @@ proxy-groups:
   proxies:
   - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
   - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
-  - 🇸🇦 沙特 (Saudi Arabia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

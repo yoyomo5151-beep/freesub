@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - xiaohe
-  server: alda1.thewalkingded.life
+  server: 85.155.228.24
   port: 443
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
     public-key: 2IBUcPHOhFulmJaICe_xuRBJVgjDqVXB8fjHVdbdOQA
     short-id: e114ca996877ce3a
   servername: alda1.thewalkingded.life
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
