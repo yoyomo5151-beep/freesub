@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 132.243.175.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 104.21.35.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  tls: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 34.158.23.115
   port: 443
   udp: true
@@ -37,18 +15,16 @@ proxies:
     public-key: f8aV8naD8NKt_mLKaOou0qUrIM1Ge25kJNxywpF3OB0
     short-id: d016c76007f78038
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 152.67.75.161
-  port: 443
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  server: 82.38.64.229
+  port: 8443
   udp: true
   type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 45.90.59.15
   port: 443
   udp: true
@@ -60,16 +36,16 @@ proxies:
     public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
     short-id: 19253fae84102271
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   server: 104.165.205.42
   port: 8443
   udp: true
   type: hysteria2
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: 104.165.205.42
+  sni: speedtestmark.com
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   server: 104.165.205.40
   port: 8443
   udp: true
@@ -77,7 +53,7 @@ proxies:
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 151.242.2.81
   port: 443
   udp: true
@@ -89,14 +65,30 @@ proxies:
   network: ws
   ws-opts:
     path: /cdn/v3/live
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  server: 140.238.213.114
-  port: 50160
+    headers:
+      Host: cf9.rumedia-cdn.com
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
+  server: 34.65.191.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb
+  tls: true
+  reality-opts:
+    public-key: DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI
+    short-id: 5214a92cad4ad90e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  server: 152.67.75.161
+  port: 443
   udp: true
   type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
+  password: 3a702d4d1de4949005d8431220e040fb
   sni: www.bing.com
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,7 +102,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,6 +115,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
 rules:
 - MATCH,PROXIES

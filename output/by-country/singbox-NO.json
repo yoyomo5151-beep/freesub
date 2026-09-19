@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇳🇴 挪威 (Norway) 02 - xiaohe",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 03 - xiaohe",
       "server": "46.29.238.32",
       "server_port": 40443,
       "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
@@ -53,10 +33,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 04 - xiaohe",
+      "tag": "🇳🇴 挪威 (Norway) 03 - xiaohe",
       "server": "151.242.168.125",
       "server_port": 390,
-      "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
+      "uuid": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -73,6 +53,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 04 - xiaohe",
+      "server": "46.29.238.88",
+      "server_port": 40443,
+      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
+          "short_id": "f7b2"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇳🇴 挪威 (Norway) 05 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16291,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -80,7 +88,8 @@
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
         "🇳🇴 挪威 (Norway) 02 - xiaohe",
         "🇳🇴 挪威 (Norway) 03 - xiaohe",
-        "🇳🇴 挪威 (Norway) 04 - xiaohe"
+        "🇳🇴 挪威 (Norway) 04 - xiaohe",
+        "🇳🇴 挪威 (Norway) 05 - xiaohe"
       ]
     },
     {
@@ -90,7 +99,8 @@
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
         "🇳🇴 挪威 (Norway) 02 - xiaohe",
         "🇳🇴 挪威 (Norway) 03 - xiaohe",
-        "🇳🇴 挪威 (Norway) 04 - xiaohe"
+        "🇳🇴 挪威 (Norway) 04 - xiaohe",
+        "🇳🇴 挪威 (Norway) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

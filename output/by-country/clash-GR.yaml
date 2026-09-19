@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 104.21.234.13
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
-  tls: true
-  servername: fancy-rain-136e.thisisalee.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiMXZFdnZOdVFvSkNWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiOTEuMTg2LjIxOS44MiJdfQ==
-    headers:
-      Host: fancy-rain-136e.thisisalee.workers.dev
-- name: 🇬🇷 希腊 (Greece) 02 - xiaohe
   server: 94.241.174.157
   port: 40443
   udp: true
@@ -31,8 +16,8 @@ proxies:
     public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
     short-id: beb4
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
+  client-fingerprint: qq
+- name: 🇬🇷 希腊 (Greece) 02 - xiaohe
   server: 185.126.238.87
   port: 2083
   udp: true
@@ -41,7 +26,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: security.debian.org
-- name: 🇬🇷 希腊 (Greece) 04 - xiaohe
+- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
   server: 85.90.197.220
   port: 443
   udp: true
@@ -53,7 +38,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +47,6 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
   - 🇬🇷 希腊 (Greece) 03 - xiaohe
-  - 🇬🇷 希腊 (Greece) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +55,5 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
   - 🇬🇷 希腊 (Greece) 03 - xiaohe
-  - 🇬🇷 希腊 (Greece) 04 - xiaohe
 rules:
 - MATCH,PROXIES
