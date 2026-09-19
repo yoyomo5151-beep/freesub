@@ -6,35 +6,9 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-      "server": "ee1.sferavpn.pro",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
       "server": "94.183.170.147",
       "server_port": 8443,
-      "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
+      "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -55,55 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
-      "tls": {
-        "enabled": true,
-        "server_name": "hub-ee-01.hanvpn.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ee01-grpc-8e47a"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-      "server": "31.76.71.63",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
       "server": "95.85.224.17",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -113,12 +39,87 @@
         "server_name": "est1313.ggisopi.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
           "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
           "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+      "server": "ee1.sferavpn.pro",
+      "server_port": 443,
+      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee1.sferavpn.pro",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "109.206.241.10",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
+      "server": "estomin1.vodniki.monster",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "estomin1.vodniki.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
+          "short_id": "d98e7afec9c0c359"
         }
       }
     },

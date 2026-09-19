@@ -5,6 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  server: 104.18.37.228
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  server: neth9.lunariai.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 192.145.31.5
   port: 8443
   udp: true
@@ -14,16 +41,14 @@ proxies:
   servername: neth9.lunariai.ru
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 192.145.31.5
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  server: 213.183.63.60
+  port: 9029
   udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   server: 193.148.59.178
   port: 443
   udp: true
@@ -35,36 +60,7 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 131.123.39.29
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  server: 144.31.50.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   server: 87.120.196.212
   port: 443
@@ -76,6 +72,57 @@ proxies:
   servername: holo-stream.videocactus.xyz
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  server: 131.123.39.29
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
+  server: 144.31.50.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: random
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
+  server: 108.165.233.223
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2388e166-3890-33ae-f77e-efac00000001
+  tls: true
+  servername: netlivpn4813.ddhshhshs.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇧🇬 保加利亚 (Bulgaria) 12 - xiaohe
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +135,11 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +152,10 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - xiaohe
 rules:
 - MATCH,PROXIES

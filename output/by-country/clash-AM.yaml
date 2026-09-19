@@ -5,6 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  server: 31.59.121.156
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /go/library/channel?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
+  server: 152.42.138.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /event/post/discount?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇲 亚美尼亚 (Armenia) 03 - xiaohe
+  server: 103.251.167.112
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /library/lang?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇲 亚美尼亚 (Armenia) 04 - xiaohe
   server: aotocon.ggisopi.su
   port: 443
   udp: true
@@ -15,18 +59,40 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: aotocon.ggisopi.su
-  client-fingerprint: edge
+  client-fingerprint: chrome
+- name: 🇦🇲 亚美尼亚 (Armenia) 05 - xiaohe
+  server: 64.225.110.247
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /acg/buy/ajax?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 03 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 04 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 03 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 04 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
