@@ -1,0 +1,517 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.21.45.213",
+      "server_port": 443,
+      "uuid": "a5b1d1ec-327c-f1c5-5856-b34600000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-541f9d.ezaccess1d3db24.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "ez-541f9d.ezaccess1d3db24.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+      "transport": {
+        "type": "ws",
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime36.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 04 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime11.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 05 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime36.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 06 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "90f0ae37-5a8f-4649-98ad-ac5323840f93",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.SG.CMLiussss.net",
+        "headers": {
+          "Host": "silent-king-06b6.297-842.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 07 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "ne4d3.thir.mn8.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 08 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 09 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "3e553ebf-db9d-4858-b608-03d6ff615a41",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net",
+        "headers": {
+          "Host": "rapid-waterfall-7270.255-22b.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 10 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b",
+      "transport": {
+        "type": "ws",
+        "path": "/fp",
+        "headers": {
+          "Host": "hhlfy.twiladaphne.ndjp.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 11 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "e5cc16a6-ea42-46b2-82ae-ad2157e1641b",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "hhlfy.twiladaphne.ndjp.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 12 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "c6171ace-4580-45c7-b00f-5e6c56f48794",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
+        "headers": {
+          "Host": "withered-cloud-1202.405-42c.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 13 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "50414e45-4c5f-5a45-5553-e0dfede8abc0",
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/e0dfede8abc0",
+        "headers": {
+          "Host": "xoz60debusrs.lezuwaeiunjs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 14 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "50414e45-4c5f-5a45-5553-e0dfede8abc0",
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/e0dfede8abc0",
+        "headers": {
+          "Host": "xoz60debusrs.lezuwaeiunjs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 15 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8f53fce2-6c17-4e37-9ae9-d969fd85117c",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/Wp4FqWLcoYNYXCovu4?ed=2560",
+        "headers": {
+          "Host": "api-hub-c9a393.alimirzai539-484.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 16 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8f53fce2-6c17-4e37-9ae9-d969fd85117c",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/Wp4FqWLcoYNYXCovu4?ed=2560",
+        "headers": {
+          "Host": "api-hub-c9a393.alimirzai539-484.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 17 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 18 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 19 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "calm-smoke-1a21.alvlirm6262.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 20 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384",
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip",
+        "headers": {
+          "Host": "shy-fog-af06.alvlirm333.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 21 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8525fe74-67e6-4a55-8a26-95f227bd1384",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "damp-dawn-3a96.alvlirm123.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 22 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "1bc8fb2a-3bee-4ae0-aa12-957885e63e18",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip",
+        "headers": {
+          "Host": "super-mud-8b38.114-a90.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 23 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "9c772ed7-2843-4554-9a96-4a88f827de58",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
+        "headers": {
+          "Host": "nameless-tree-08b8.352.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 24 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8cc8bedd-5103-4d22-a79c-a88f1160055a",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
+        "headers": {
+          "Host": "red-unit-60bc.165-1dd.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 25 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "ba026f72-b6b6-448b-8a8e-39e60e375f5f",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.US.CMLiussss.net",
+        "headers": {
+          "Host": "plain-cell-7c51.415-172.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 26 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8dd8af16-cae0-4431-b04c-a637b4d7645b",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=proxyip.us.cmliussss.net",
+        "headers": {
+          "Host": "wild-frog-c709.403-6ff.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 27 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8dd8af16-cae0-4431-b04c-a637b4d7645b",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=proxyip.us.cmliussss.net",
+        "headers": {
+          "Host": "wild-frog-c709.403-6ff.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 28 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "a51d8a82-faec-44f4-8882-441a2e7f0ce4",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
+        "headers": {
+          "Host": "spring-math-5c8c.434.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 29 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "a51d8a82-faec-44f4-8882-441a2e7f0ce4",
+      "transport": {
+        "type": "ws",
+        "path": "/pyip=ProxyIP.KR.CMLiussss.net",
+        "headers": {
+          "Host": "spring-math-5c8c.434.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 30 - xiaohe",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "20e295db-a6af-4006-bfd6-91453f169968",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "057.electrocellco-cf-057.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe",
+        "🌐 其他地区 (Other) 05 - xiaohe",
+        "🌐 其他地区 (Other) 06 - xiaohe",
+        "🌐 其他地区 (Other) 07 - xiaohe",
+        "🌐 其他地区 (Other) 08 - xiaohe",
+        "🌐 其他地区 (Other) 09 - xiaohe",
+        "🌐 其他地区 (Other) 10 - xiaohe",
+        "🌐 其他地区 (Other) 11 - xiaohe",
+        "🌐 其他地区 (Other) 12 - xiaohe",
+        "🌐 其他地区 (Other) 13 - xiaohe",
+        "🌐 其他地区 (Other) 14 - xiaohe",
+        "🌐 其他地区 (Other) 15 - xiaohe",
+        "🌐 其他地区 (Other) 16 - xiaohe",
+        "🌐 其他地区 (Other) 17 - xiaohe",
+        "🌐 其他地区 (Other) 18 - xiaohe",
+        "🌐 其他地区 (Other) 19 - xiaohe",
+        "🌐 其他地区 (Other) 20 - xiaohe",
+        "🌐 其他地区 (Other) 21 - xiaohe",
+        "🌐 其他地区 (Other) 22 - xiaohe",
+        "🌐 其他地区 (Other) 23 - xiaohe",
+        "🌐 其他地区 (Other) 24 - xiaohe",
+        "🌐 其他地区 (Other) 25 - xiaohe",
+        "🌐 其他地区 (Other) 26 - xiaohe",
+        "🌐 其他地区 (Other) 27 - xiaohe",
+        "🌐 其他地区 (Other) 28 - xiaohe",
+        "🌐 其他地区 (Other) 29 - xiaohe",
+        "🌐 其他地区 (Other) 30 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe",
+        "🌐 其他地区 (Other) 04 - xiaohe",
+        "🌐 其他地区 (Other) 05 - xiaohe",
+        "🌐 其他地区 (Other) 06 - xiaohe",
+        "🌐 其他地区 (Other) 07 - xiaohe",
+        "🌐 其他地区 (Other) 08 - xiaohe",
+        "🌐 其他地区 (Other) 09 - xiaohe",
+        "🌐 其他地区 (Other) 10 - xiaohe",
+        "🌐 其他地区 (Other) 11 - xiaohe",
+        "🌐 其他地区 (Other) 12 - xiaohe",
+        "🌐 其他地区 (Other) 13 - xiaohe",
+        "🌐 其他地区 (Other) 14 - xiaohe",
+        "🌐 其他地区 (Other) 15 - xiaohe",
+        "🌐 其他地区 (Other) 16 - xiaohe",
+        "🌐 其他地区 (Other) 17 - xiaohe",
+        "🌐 其他地区 (Other) 18 - xiaohe",
+        "🌐 其他地区 (Other) 19 - xiaohe",
+        "🌐 其他地区 (Other) 20 - xiaohe",
+        "🌐 其他地区 (Other) 21 - xiaohe",
+        "🌐 其他地区 (Other) 22 - xiaohe",
+        "🌐 其他地区 (Other) 23 - xiaohe",
+        "🌐 其他地区 (Other) 24 - xiaohe",
+        "🌐 其他地区 (Other) 25 - xiaohe",
+        "🌐 其他地区 (Other) 26 - xiaohe",
+        "🌐 其他地区 (Other) 27 - xiaohe",
+        "🌐 其他地区 (Other) 28 - xiaohe",
+        "🌐 其他地区 (Other) 29 - xiaohe",
+        "🌐 其他地区 (Other) 30 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
