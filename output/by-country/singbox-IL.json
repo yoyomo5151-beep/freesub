@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -28,8 +28,8 @@
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
       "server": "176.65.151.237",
-      "server_port": 13054,
-      "uuid": "b08daec7-2ced-43bc-97df-783d6633cd5a",
+      "server_port": 31770,
+      "uuid": "bb9ae0d0-a91f-49e2-914b-1280276e4b30",
       "transport": {
         "type": "grpc"
       }

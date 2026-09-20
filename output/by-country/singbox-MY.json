@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "my2.miyazono-kaori.com",
+      "server": "my1.miyazono-kaori.com",
       "server_port": 443,
-      "uuid": "355337bc-90f9-4469-8d9a-1e2be6a7a055",
+      "uuid": "1d6c2ce7-7b05-40cb-8779-bb1ade0899ce",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -19,20 +19,20 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM",
-          "short_id": "ed77ac35a310"
+          "public_key": "t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc",
+          "short_id": "99f8972e3dd5ed"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-      "server": "msjp.mangshe.xyz",
-      "server_port": 20563,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "mlxy.mangshe.xyz",
+        "server_name": "47.250.84.25",
         "insecure": true
       }
     },
