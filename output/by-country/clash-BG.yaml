@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
   server: 192.145.31.5
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 192.145.31.5
   port: 443
   udp: true
   type: vless
@@ -23,7 +13,28 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   server: 193.148.59.178
   port: 443
   udp: true
@@ -36,7 +47,7 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   server: 131.123.41.31
   port: 8081
   udp: true
@@ -45,34 +56,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 131.123.41.177
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  server: 131.123.41.18
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  server: 131.123.37.199
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   server: 131.123.39.29
   port: 8081
   udp: true
@@ -81,19 +65,25 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
   server: 131.123.41.18
-  port: 443
+  port: 8081
   udp: true
   type: vless
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaohe
+  server: neth9.lunariai.ru
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
-  reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  servername: sheetpeek.com
-  client-fingerprint: chrome
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
+  client-fingerprint: qq
 - name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
   server: 131.123.39.29
   port: 443
@@ -108,22 +98,20 @@ proxies:
   servername: sheetpeek.com
   client-fingerprint: ios
 - name: 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
-  server: 104.19.106.19
+  server: 131.123.41.18
   port: 443
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-4beea30ea96c
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  flow: xtls-rprx-vision
   tls: true
-  servername: 4cz9gseouyns.2iz1ile4upks.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4beea30ea96c/loc-0
-    headers:
-      Host: 4cz9gseouyns.2iz1ile4upks.workers.dev
+  reality-opts:
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  servername: sheetpeek.com
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 12 - xiaohe
-  server: 144.31.50.236
+  server: prep.wwwinternetvideo.click
   port: 443
   udp: true
   type: vless
@@ -134,7 +122,16 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 13 - xiaohe
+  server: 131.123.37.199
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,6 +149,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 12 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -169,5 +167,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 12 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 13 - xiaohe
 rules:
 - MATCH,PROXIES
