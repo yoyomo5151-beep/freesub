@@ -14,38 +14,27 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "172.105.169.70",
+      "server": "51.161.204.244",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "172.105.169.70",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "34.87.244.111",
-      "server_port": 443,
-      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
-          "short_id": "d725f0dd8cce210f"
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "34.87.229.148",
       "server_port": 443,
       "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
@@ -65,11 +54,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-      "server": "51.161.204.244",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "server": "34.87.244.111",
       "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
+      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -79,8 +67,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
+          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
+          "short_id": "d725f0dd8cce210f"
         }
       }
     },
@@ -92,8 +80,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
       ]
     },
     {
@@ -103,8 +90,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

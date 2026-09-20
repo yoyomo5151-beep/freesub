@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.16.10.2",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
+      "server": "88.119.168.61",
       "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "u.srilankangrill.online",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/discuss?ed=2560fp=chrome",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

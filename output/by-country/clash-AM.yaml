@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.10.2
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  server: 88.119.168.61
   port: 443
   udp: true
   type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: u.srilankangrill.online
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /discuss?ed=2560fp=chrome
     headers:
-      Host: u.srilankangrill.online
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

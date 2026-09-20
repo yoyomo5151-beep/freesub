@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.64.229.170
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
   server: 155.117.19.17
   port: 443
   udp: true
@@ -31,13 +20,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

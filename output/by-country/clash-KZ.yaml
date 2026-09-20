@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 162.159.0.53
-  port: 2086
+  server: kz.cdn-update.rutube.info
+  port: 8443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  tls: true
+  reality-opts:
+    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
+    short-id: 08
+  servername: dest1.cdn-update.rutube.info
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 83.222.23.81
   port: 38065
@@ -26,7 +30,7 @@ proxies:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
     short-id: fa
   servername: yahoo.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 109.248.170.119
   port: 13447
@@ -38,18 +42,32 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
     short-id: '83'
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  server: 151.101.1.194
-  port: 80
+  server: 77.73.232.61
+  port: 19747
   udp: true
   type: vless
-  uuid: c19dcd53-1fed-4147-bdb6-b3d318c8d9f3
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  tls: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /vmess/
     headers:
-      Host: simorghfr.global.ssl.fastly.net
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +77,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +87,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
