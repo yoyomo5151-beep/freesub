@@ -9,17 +9,58 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
   tls: true
   reality-opts:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
     short-id: 72ccd4a7563c2953
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 132.243.65.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d08aa81-f729-4857-a2e9-06e48b8b9556
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.global-cdn.org
+  client-fingerprint: safari
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 95.85.224.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -28,15 +69,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   server: 94.183.170.135
   port: 443
   udp: true
@@ -45,7 +78,17 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
+  server: ee1.sferavpn.pro
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
   server: 5.181.201.36
   port: 443
   udp: true
@@ -58,46 +101,27 @@ proxies:
     short-id: d98e7afec9c0c359
   servername: estomin1.vodniki.monster
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 95.85.224.17
+- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  server: 45.11.27.86
   port: 443
   udp: true
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
+    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
+    short-id: d0aae44f
+  servername: 5post-gate.x5.ru
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
   server: tishina-axe.dedyn.io
   port: 8443
   udp: true
   type: hysteria2
   password: 319ed24b1c7203aa
   sni: tishina-axe.dedyn.io
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: cabinet.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
-  server: 93.89.220.7
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0
-  tls: true
-  reality-opts:
-    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
-    short-id: b3a1cc510a2001c6
-  servername: eh.vk.com
-  client-fingerprint: ios
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,6 +136,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,5 +152,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
 rules:
 - MATCH,PROXIES
