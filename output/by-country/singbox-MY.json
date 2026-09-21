@@ -4,60 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "47.250.84.25",
-      "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "moltbot.doctoroyy.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-      "server": "103.117.141.124",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "mlxy1.mangshe.xyz",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
-      "server_port": 60507,
-      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+      "server": "160.30.54.63",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM",
-          "short_id": "0888830f7006f1"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe",
-      "server": "msjp.mangshe.xyz",
-      "server_port": 20563,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "mlxy.mangshe.xyz",
-        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
@@ -65,20 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

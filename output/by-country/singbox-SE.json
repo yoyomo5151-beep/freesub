@@ -6,25 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "51.170.185.165",
-      "server_port": 45819,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo="
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "143.246.196.152",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -48,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "5.157.10.147",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -58,7 +47,7 @@
         "server_name": "svvedko.nxxzxaw.beer",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -69,7 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
       "server": "143.246.195.138",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -80,7 +69,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
       "server": "143.246.195.98",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -91,7 +80,51 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "server": "143.246.196.152",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
+      "server": "177.3.215.171",
+      "server_port": 443,
+      "uuid": "c47b421f-65f1-4190-b7ba-bd2045086fe4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI",
+          "short_id": "7f2e9c4b1a8d6e53"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -100,7 +133,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -114,66 +147,14 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
       "server": "143.246.194.60",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
         "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-      "server": "2.26.91.98",
-      "server_port": 1443,
-      "uuid": "9ba09caf-da90-48ef-9dac-1a4611bc88d1",
-      "tls": {
-        "enabled": true,
-        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 11 - xiaohe",
-      "server": "se.belka.network",
-      "server_port": 443,
-      "uuid": "c47b421f-65f1-4190-b7ba-bd2045086fe4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI",
-          "short_id": "7f2e9c4b1a8d6e53"
-        }
       }
     },
     {
@@ -190,8 +171,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 11 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 10 - xiaohe"
       ]
     },
     {
@@ -207,8 +187,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 08 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 09 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 10 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 11 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

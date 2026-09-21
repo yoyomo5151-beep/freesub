@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: 130.17.27.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /player/shop?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
   server: 35.199.90.53
   port: 443
   udp: true
@@ -16,7 +30,7 @@ proxies:
     short-id: 4b414f69a06e1e81
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
   server: 34.39.174.220
   port: 443
   udp: true
@@ -35,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 rules:
 - MATCH,PROXIES
