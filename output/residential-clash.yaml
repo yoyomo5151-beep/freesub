@@ -5,13 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: r3mrcg001286ek2.cybervena.com
+  server: 36.224.141.124
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  server: 104.238.148.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /about?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -21,8 +36,8 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  client-fingerprint: qq
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   udp: true
@@ -36,27 +51,13 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
@@ -65,7 +66,7 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:

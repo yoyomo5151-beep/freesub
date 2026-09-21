@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "alda1.thewalkingded.life",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
+      "server": "46.29.238.88",
+      "server_port": 40443,
+      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
       "tls": {
         "enabled": true,
-        "server_name": "alda1.thewalkingded.life",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2IBUcPHOhFulmJaICe_xuRBJVgjDqVXB8fjHVdbdOQA",
-          "short_id": "e114ca996877ce3a"
+          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
+          "short_id": "f7b2"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

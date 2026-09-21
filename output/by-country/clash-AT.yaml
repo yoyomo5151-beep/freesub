@@ -23,15 +23,18 @@ proxies:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
   servername: at.quattro-tech.ru
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 67.159.17.39
-  port: 30443
+  server: austria-dedic1.failspace.top
+  port: 443
   udp: true
-  type: hysteria2
-  password: 1e6fed5b-5edc-4ddb-a268-79d7fae4365c
-  sni: filesconvert.org
-  skip-cert-verify: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: austria-dedic1.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
