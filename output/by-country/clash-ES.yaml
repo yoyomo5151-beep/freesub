@@ -5,24 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 154.197.75.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 5.188.181.201
   port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: dU3DSNS8wYPXzEKw
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  server: 66.163.118.73
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
   server: 92.118.127.16
   port: 443
   udp: true
@@ -35,20 +46,6 @@ proxies:
     short-id: 908563a721d9bdcd
   servername: sp1.extremumnews.com
   client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
   server: 212.227.235.66
   port: 2053
@@ -88,29 +85,18 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: edge
 - name: 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  server: mygptagent.org
+  server: 83.147.18.3
   port: 443
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
   tls: true
-  servername: mygptagent.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaohe
-  server: 85.90.217.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,7 +111,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,6 +125,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 07 - xiaohe
   - 🇪🇸 西班牙 (Spain) 08 - xiaohe
   - 🇪🇸 西班牙 (Spain) 09 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 10 - xiaohe
 rules:
 - MATCH,PROXIES

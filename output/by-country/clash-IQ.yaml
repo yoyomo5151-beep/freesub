@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 193.56.135.212
-  port: 9543
+  server: 104.21.87.130
+  port: 443
   udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  type: trojan
+  password: Telegram_healer_config
+  sni: z6y-daOX0hyhDtdy.r720kPByx2l3i406.wOrKErS.DEv
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/UOAg5ubCk87OTaiIAxc0O?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select

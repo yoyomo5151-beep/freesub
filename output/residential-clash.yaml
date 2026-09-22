@@ -11,30 +11,33 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  sni: 86cc2a56-tm3mo0-unh4sc-xm0q.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 45.77.241.190
-  port: 8441
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
   type: vless
-  uuid: 8a9dff00-0705-4c1b-9126-8c1bdc8b5d0a
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 45.149.186.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  server: 654168416355441.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -42,7 +45,23 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  servername: 654168416355441.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 654168416355441.oylfmxz.cn
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -53,17 +72,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

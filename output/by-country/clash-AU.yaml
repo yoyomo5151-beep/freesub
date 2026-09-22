@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 188.114.97.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: 6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: somersby.pt.r3xxe.eu.cc
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 82.198.246.37
   port: 180
   udp: true
@@ -23,6 +12,18 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  server: 34.87.244.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 34.87.229.148
   port: 443
@@ -36,17 +37,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: 34.87.244.111
+  server: vpn-au-002.fastervpn.world
   port: 443
   udp: true
-  type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   server: 51.161.204.244
   port: 443
@@ -60,24 +57,6 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
-  server: 152.67.115.203
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,8 +67,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,7 +77,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
