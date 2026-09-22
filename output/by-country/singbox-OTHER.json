@@ -4,28 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "104.21.87.130",
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "password": "Telegram_healer_config",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "z6y-daOX0hyhDtdy.r720kPByx2l3i406.wOrKErS.DEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tr/UOAg5ubCk87OTaiIAxc0O?ed=2560",
+        "path": "/pai50288",
         "headers": {
-          "Host": "z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev"
+          "Host": "ccs2g.pai50288.uk"
         }
       }
     },
@@ -34,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

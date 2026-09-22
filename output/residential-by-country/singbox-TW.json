@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "r3mrcg001286ek2.cybervena.com",
+      "server": "36.224.141.124",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
@@ -14,40 +14,21 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "server": "ttszhrmghgdssbkqf.cfooov.xyz",
+      "server_port": 42241,
+      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "654168416355441.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "654168416355441.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "654168416355441.oylfmxz.cn"
+          "public_key": "lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ",
+          "short_id": "1cb574e4d5d8"
         }
       }
     },
@@ -57,8 +38,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ]
     },
     {
@@ -66,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

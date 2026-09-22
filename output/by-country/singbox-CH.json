@@ -37,8 +37,28 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "server": "34.65.54.139",
+      "server_port": 443,
+      "uuid": "bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI",
+          "short_id": "5214a92cad4ad90e"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -50,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -60,7 +80,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -71,14 +91,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-      "server": "199.232.249.220",
-      "server_port": 443,
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
+      "server": "179.255.191.40",
+      "server_port": 8443,
+      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
       "tls": {
         "enabled": true,
-        "server_name": "global.fastly.com",
+        "server_name": "switz.luxes.network",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
@@ -86,15 +109,12 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "sardach3.global.ssl.fastly.net"
-        }
+        "path": "/assets"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -109,16 +129,11 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn/v3/live"
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "selector",

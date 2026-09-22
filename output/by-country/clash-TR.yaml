@@ -5,28 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 188.114.98.16
-  port: 2082
+  server: 206.1.97.212
+  port: 28351
   udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 104.20.6.153
-  port: 8880
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 78.135.73.47
   port: 443
   udp: true
@@ -39,7 +28,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -51,29 +40,6 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: 146.75.84.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BechBad.global.ssl.fastly.net
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  server: 103.215.218.158
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,9 +48,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,8 +56,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
 rules:
 - MATCH,PROXIES

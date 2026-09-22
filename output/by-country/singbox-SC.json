@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "hk3n.wxgqlfx.vip",
+      "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
+      "server_port": 17594,
+      "uuid": "55848813-689e-4a39-82cf-00748cbc7289",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA",
+          "short_id": "383e976fcf298029"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

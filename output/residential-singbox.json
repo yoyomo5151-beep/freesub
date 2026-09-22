@@ -4,86 +4,46 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "r3mrcg001286ek2.cybervena.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+      "server": "36.224.141.124",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "ttszhrmghgdssbkqf.cfooov.xyz",
+      "server_port": 42241,
+      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+          "public_key": "lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ",
+          "short_id": "1cb574e4d5d8"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-      "server": "45.149.186.133",
-      "server_port": 443,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "tls": {
-        "enabled": true,
-        "server_name": "e34bq.oa9r.zl3.hh.vavava.kdns.fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
-      "server": "654168416355441.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "654168416355441.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "654168416355441.oylfmxz.cn"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe",
-      "server": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
@@ -91,22 +51,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
