@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: 34.15.162.1
   port: 443
@@ -26,9 +26,9 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.111.193
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless

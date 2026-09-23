@@ -12,49 +12,57 @@ proxies:
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  server: 158.51.123.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
   server: 142.4.216.225
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
+- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
+  server: 188.114.97.6
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
+  server: 188.114.97.6
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  server: 138.197.141.58
+  server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
-  server: 51.222.155.113
-  port: 5601
+  server: 66.163.113.176
+  port: 22324
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
   server: 15.235.75.71
   port: 8388
@@ -63,7 +71,43 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: FD3rCuOsxOay
 - name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
-  server: 104.21.8.201
+  server: 23.132.28.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
+    short-id: a7c31f92
+  servername: candy.atlasparser.site
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
+  server: 66.70.179.198
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  tls: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
+  server: 188.114.97.6
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
+  server: 172.67.130.159
   port: 2096
   udp: true
   type: vless
@@ -77,59 +121,33 @@ proxies:
     path: /fqg7aacd8s
     headers:
       Host: cdn-ca.skyvora.app
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  server: 137.184.174.93
-  port: 8080
+- name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
+  server: 158.51.123.42
+  port: 22324
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  server: 66.70.179.198
-  port: 2053
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
   server: 149.22.95.183
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
-  server: 23.132.28.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
-    short-id: a7c31f92
-  servername: candy.atlasparser.site
-  client-fingerprint: qq
-- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  server: 130.107.73.148
-  port: 41373
-  udp: true
-  type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
   server: 158.69.112.254
   port: 443
   udp: true
@@ -141,8 +159,28 @@ proxies:
     public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
     short-id: 3d3c1e645f763ee3
   servername: www.speedtest.net
-  client-fingerprint: edge
-- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+  server: 130.107.73.148
+  port: 41373
+  udp: true
+  type: vless
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
   server: 209.200.246.148
   port: 443
   udp: true
@@ -155,7 +193,7 @@ proxies:
     short-id: f98843107912e782
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
   server: vpn-ca-001.fastervpn.world
   port: 443
   udp: true
@@ -163,7 +201,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: t.me
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
   server: mygptagent.org
   port: 443
   udp: true
@@ -177,7 +215,9 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
+    headers:
+      Host: mygptagent.org
+- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
   server: 66.70.179.124
   port: 443
   udp: true
@@ -189,15 +229,22 @@ proxies:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
     short-id: af7e79b5
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  server: 51.79.85.185
-  port: 8118
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 23 - xiaohe
+  server: 51.222.136.236
+  port: 8882
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
+  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 (Canada) 24 - xiaohe
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 25 - xiaohe
   server: 134.195.198.214
   port: 22324
   udp: true
@@ -205,36 +252,6 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
-  server: 51.222.141.125
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 23 - xiaohe
-  server: 66.163.113.176
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 24 - xiaohe
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 25 - xiaohe
-  server: 51.222.136.236
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
 proxy-groups:
 - name: PROXIES
   type: select
