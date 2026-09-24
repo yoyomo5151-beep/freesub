@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.67.130.187",
-      "server_port": 2083,
-      "uuid": "2b8738de-1af5-4267-b101-c05707769ed4",
+      "server": "104.21.94.230",
+      "server_port": 443,
+      "uuid": "de78c0b1-c5c8-412a-bd92-430d1f2e2642",
       "tls": {
         "enabled": true,
-        "server_name": "fans.liverpool.qzz.io",
+        "server_name": "frosty-pond-7436.shhabbyat914.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,16 +20,58 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/NmrU9ImDG7jA7oFEem",
         "headers": {
-          "Host": "fans.liverpool.qzz.io"
+          "Host": "frosty-pond-7436.shhabbyat914.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 02 - xiaohe",
+      "server": "193.56.135.137",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 03 - xiaohe",
       "server": "193.56.135.212",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 04 - xiaohe",
+      "server": "193.56.135.233",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
       "flow": "xtls-rprx-vision",
@@ -53,7 +95,9 @@
       "outbounds": [
         "auto",
         "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 02 - xiaohe",
+        "🇮🇶 IQ 03 - xiaohe",
+        "🇮🇶 IQ 04 - xiaohe"
       ]
     },
     {
@@ -61,7 +105,9 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 02 - xiaohe",
+        "🇮🇶 IQ 03 - xiaohe",
+        "🇮🇶 IQ 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

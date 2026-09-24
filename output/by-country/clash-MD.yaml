@@ -31,7 +31,7 @@ proxies:
   servername: moldova.cdn-europe.org
   client-fingerprint: random
 - name: 🇲🇩 摩尔多瓦 (Moldova) 03 - xiaohe
-  server: 143.246.216.64
+  server: 143.246.219.51
   port: 8081
   udp: true
   type: vless
@@ -40,7 +40,7 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇲🇩 摩尔多瓦 (Moldova) 04 - xiaohe
-  server: 143.246.219.51
+  server: 143.246.216.64
   port: 8081
   udp: true
   type: vless

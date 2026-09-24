@@ -6,37 +6,35 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
+      "server": "89.117.112.40",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "path": "/",
         "headers": {
-          "Host": "netlivpn2950.bbxff.workers.dev"
+          "Host": "vms.lifetime11.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-      "server": "104.21.200.243",
-      "server_port": 2053,
-      "uuid": "7074b9d7-2183-8919-fc11-ca5e00000000",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "netlivpn2584.vjvdgbc.workers.dev",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn2584.vjvdgbc.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
         }
       }
     },
@@ -53,15 +51,26 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
+      "server": "151.242.2.81",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "cf9.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
       }
     },
     {
@@ -76,79 +85,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-      "server": "45.90.59.15",
+      "server": "77.110.104.238",
       "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
+      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
-        }
+        "server_name": "ch2-hy2.veilvpn.life",
+        "insecure": false
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
-      "server": "netlivpn5505.ffffdsaaa.workers.dev",
-      "server_port": 443,
-      "uuid": "f6b5a6a3-f3e1-63ca-bb68-bdc400000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn5505.ffffdsaaa.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "netlivpn5505.ffffdsaaa.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - xiaohe",
-      "server": "151.242.2.81",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf9.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - xiaohe",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "selector",
@@ -160,10 +106,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 08 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 09 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ]
     },
     {
@@ -175,10 +118,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 08 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 09 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

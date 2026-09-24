@@ -5,52 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.64.147.85
-  port: 80
+  server: chatgpt.com
+  port: 443
   udp: true
   type: vless
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  uuid: a43a9a45-7387-4faf-ad06-24b1ae181fdc
+  tls: true
+  servername: snowy-glade-85fa.arshiatakalloo88.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    path: /eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: elenaaaaaaaaaa.cloudns.pro
+      Host: snowy-glade-85fa.arshiatakalloo88.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 172.67.147.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
-  tls: true
-  servername: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0?ed=2560
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 162.159.152.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: 153.76.185.148
+  server: 153.76.185.96
   port: 3090
   udp: true
   type: vless
-  uuid: 1552d599-a036-4389-a5c0-bf14dfaddc1a
+  uuid: be2c444d-74a1-407c-a88c-cba06f9a58dc
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -61,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES

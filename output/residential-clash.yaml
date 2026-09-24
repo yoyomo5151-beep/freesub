@@ -5,76 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 188.114.97.6
-  port: 443
+  server: 104.18.39.218
+  port: 8880
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
-  tls: true
-  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    path: /?ed=2560security=tls
     headers:
-      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  server: 91.186.218.227
-  port: 4443
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 36.224.141.124
+  port: 50099
   udp: true
-  type: vless
-  uuid: d548eca0-3f96-4967-922b-d612b792f125
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: 9dc0aa1f-8df6-4d80-b17c-7b92cdfc514d
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

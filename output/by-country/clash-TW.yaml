@@ -5,53 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: 34.81.223.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31a40f42-4ad6-4a32-a760-71102b459584
-  tls: true
-  reality-opts:
-    public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
-    short-id: d74a6321deec9f31
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
+  sni: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 35.201.163.218
-  port: 30837
+  server: 104.199.134.231
+  port: 28364
   udp: true
   type: vless
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
   servername: www.sony.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,7 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
