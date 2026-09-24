@@ -15,8 +15,19 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: api-1.hysteria.ltd
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 73606ef5-51ab-4182-8ae8-41a50e1a9d52
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-1.hysteria.ltd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 2.56.121.43
   port: 443
   udp: true
@@ -36,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 rules:
 - MATCH,PROXIES

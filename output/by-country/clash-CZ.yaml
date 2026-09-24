@@ -5,26 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: chatgpt.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: a43a9a45-7387-4faf-ad06-24b1ae181fdc
-  tls: true
-  servername: snowy-glade-85fa.arshiatakalloo88.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: snowy-glade-85fa.arshiatakalloo88.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.96
+  server: 153.76.185.100
   port: 3090
   udp: true
   type: vless
-  uuid: be2c444d-74a1-407c-a88c-cba06f9a58dc
+  uuid: 0ea51e02-ed67-439b-a562-7e3d7b4430c3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.185.93
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 52504f52-ddd4-43fe-9fc6-8fb354ca2a2f
   network: grpc
   grpc-opts:
     grpc-service-name: vless

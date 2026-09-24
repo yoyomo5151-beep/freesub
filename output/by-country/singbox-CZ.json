@@ -6,32 +6,20 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "uuid": "a43a9a45-7387-4faf-ad06-24b1ae181fdc",
-      "tls": {
-        "enabled": true,
-        "server_name": "snowy-glade-85fa.arshiatakalloo88.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "153.76.185.100",
+      "server_port": 3090,
+      "uuid": "0ea51e02-ed67-439b-a562-7e3d7b4430c3",
       "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "snowy-glade-85fa.arshiatakalloo88.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "153.76.185.96",
+      "server": "153.76.185.93",
       "server_port": 3090,
-      "uuid": "be2c444d-74a1-407c-a88c-cba06f9a58dc",
+      "uuid": "52504f52-ddd4-43fe-9fc6-8fb354ca2a2f",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
