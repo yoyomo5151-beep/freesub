@@ -69,14 +69,14 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
-      "server": "platform117.golnamakcert.top",
+      "server": "platform113.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/platform113",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "platform113.halalkhor.info"
         }
       }
     },
@@ -111,14 +111,14 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 07 - xiaohe",
-      "server": "platform113.golnamakcert.top",
+      "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113",
+        "path": "/platform117",
         "headers": {
-          "Host": "platform113.halalkhor.info"
+          "Host": "platform117.halalkhor.info"
         }
       }
     },

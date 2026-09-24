@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: de.i-love-russia.online
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  sni: de.i-love-russia.online
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -23,7 +15,15 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: ''
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: de.i-love-russia.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
+  sni: de.i-love-russia.online
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 83.219.97.26
   port: 443
@@ -37,6 +37,18 @@ proxies:
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 2.27.175.71
   port: 443
   udp: true
@@ -48,7 +60,31 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 172.67.149.27
+  port: 80
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: fi.snobvpn.online
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 37.143.129.244
   port: 443
   udp: true
@@ -61,50 +97,13 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: karo.rick313.dpdns.org
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 2e4e6812-be87-415b-a2e8-b0e17e9f2da7
-  tls: true
-  servername: karo.rick313.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
-  server: fi.snobvpn.online
-  port: 80
+  server: p1tun2.greewebservices.ir
+  port: 2060
   udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  network: ws
-  ws-opts:
-    path: /snob-ws
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
 - name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
   server: 212.193.18.183
   port: 8446
@@ -121,7 +120,7 @@ proxies:
   grpc-opts:
     grpc-service-name: snob-grpc
 - name: 🇫🇮 芬兰 (Finland) 11 - xiaohe
-  server: dissolvedvpn.eu.cc
+  server: 2.27.13.62
   port: 443
   udp: true
   type: vless
@@ -129,31 +128,20 @@ proxies:
   tls: true
   servername: dissolvedvpn.eu.cc
   skip-cert-verify: false
-  client-fingerprint: android
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /dissolved-ws/
     headers:
       Host: dissolvedvpn.eu.cc
 - name: 🇫🇮 芬兰 (Finland) 12 - xiaohe
-  server: p1tun3.greewebservices.ir
-  port: 2070
+  server: me6.movieseryalirani.ir
+  port: 57361
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
-- name: 🇫🇮 芬兰 (Finland) 13 - xiaohe
-  server: 212.193.18.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  tls: true
-  reality-opts:
-    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
-    short-id: a1b2c3d4e5f6
-  servername: maps.apple.com
-  client-fingerprint: firefox
+  type: vmess
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,7 +159,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
   - 🇫🇮 芬兰 (Finland) 11 - xiaohe
   - 🇫🇮 芬兰 (Finland) 12 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -189,6 +176,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 10 - xiaohe
   - 🇫🇮 芬兰 (Finland) 11 - xiaohe
   - 🇫🇮 芬兰 (Finland) 12 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 13 - xiaohe
 rules:
 - MATCH,PROXIES
