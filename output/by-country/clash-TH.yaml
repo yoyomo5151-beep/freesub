@@ -5,18 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 34.15.176.240
-  port: 443
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: 103.86.49.57
+  port: 80
   udp: true
   type: vless
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  tls: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-    short-id: 856c0a3cd1426a5c
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   server: 34.15.162.1
   port: 443
   udp: true
@@ -28,7 +35,19 @@ proxies:
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  server: 34.15.176.240
+  port: 443
+  udp: true
+  type: vless
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  tls: true
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    short-id: 856c0a3cd1426a5c
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 05 - xiaohe
   server: 104.18.26.90
   port: 443
   udp: true
@@ -51,6 +70,8 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +80,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
   - 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 04 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 05 - xiaohe
 rules:
 - MATCH,PROXIES
