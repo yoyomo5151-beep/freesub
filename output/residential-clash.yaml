@@ -4,36 +4,59 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 36.224.141.124
-  port: 50099
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 128.241.25.11
+  port: 30021
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  type: vless
+  uuid: 795afc16-eac7-44b1-8f3e-29488d73cf3a
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  server: 57.129.130.200
+  port: 52014
+  udp: true
+  type: vless
+  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 3d0bb862-tm96o0-tnhquc-1j0a4.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: 3d0bb862-tm96o0-tnhquc-1j0a4.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: hk01.kfc-520.com
-  port: 60001
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -44,25 +67,53 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  server: hk01.kfc-520.com
+  port: 60001
+  udp: true
+  type: hysteria2
+  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  sni: hk01.kfc-520.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
+  server: 24864168545164.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 24864168545164.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

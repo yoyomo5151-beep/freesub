@@ -20,24 +20,8 @@
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -56,6 +40,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
       "server": "46.28.71.247",
@@ -67,7 +67,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -98,8 +98,28 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 08 - xiaohe",
+      "server": "mygptagent.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - xiaohe",
       "server": "87.76.179.117",
       "server_port": 7443,
       "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
@@ -109,7 +129,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -130,7 +150,8 @@
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
         "🇪🇸 西班牙 (Spain) 06 - xiaohe",
         "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 08 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 08 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 09 - xiaohe"
       ]
     },
     {
@@ -144,7 +165,8 @@
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
         "🇪🇸 西班牙 (Spain) 06 - xiaohe",
         "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 08 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 08 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
