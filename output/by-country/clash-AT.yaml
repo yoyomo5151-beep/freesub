@@ -23,7 +23,7 @@ proxies:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
   servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
   server: 67.159.17.181
   port: 30443
@@ -33,15 +33,18 @@ proxies:
   sni: filesconvert.org
   skip-cert-verify: true
 - name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: at-at-at-new.failspace.top
-  port: 443
+  server: zcsagftt.selqora.ir
+  port: 51595
   udp: true
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  uuid: 82f2dfe6-4ef5-484f-8b7d-94f682a88b00
   flow: xtls-rprx-vision
   tls: true
-  servername: at-at-at-new.failspace.top
-  skip-cert-verify: false
+  reality-opts:
+    public-key: SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw
+    short-id: 913175efbe9ddb1d
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
