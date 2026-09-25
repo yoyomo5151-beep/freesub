@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "172.67.134.136",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.18.15.103",
       "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000003",
+      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
+        "server_name": "server9.9966338.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,24 +20,26 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/sync ",
+        "path": "/imnotarealherox",
         "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
+          "Host": "server9.9966338.xyz"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 02 - xiaohe",
-      "server": "172.67.155.136",
-      "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "ccs2g.pai50288.uk",
+      "server_port": 443,
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/sync ",
-        "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
-        }
+        "path": "/pai50288"
       }
     },
     {
@@ -45,16 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-        "🇧🇪 比利时 (Belgium) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-        "🇧🇪 比利时 (Belgium) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
