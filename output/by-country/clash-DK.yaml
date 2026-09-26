@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇰 丹麦 (Denmark) 01 - xiaohe
+  server: 45.153.48.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: cfed68c4-fc10-4638-b3ca-140e1e873797
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P1AqrrfNQhPrEv6wAtwWvSsl3WDEN9X-8j4J74orXiA
+    short-id: 7713e6b2cb0e0804
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇩🇰 丹麦 (Denmark) 02 - xiaohe
   server: 38.180.214.110
   port: 5600
   udp: true
@@ -17,11 +30,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
+  - 🇩🇰 丹麦 (Denmark) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
+  - 🇩🇰 丹麦 (Denmark) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -48,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
-      "server": "193.202.10.2",
+      "server": "arcturus.yokkastars.com",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
@@ -57,87 +57,12 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
           "short_id": "db46e2946fc466fd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 05 - xiaohe",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 06 - xiaohe",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 07 - xiaohe",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 08 - xiaohe",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 09 - xiaohe",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
         }
       }
     },
@@ -148,13 +73,7 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
-        "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe",
-        "🇮🇱 以色列 (Israel) 05 - xiaohe",
-        "🇮🇱 以色列 (Israel) 06 - xiaohe",
-        "🇮🇱 以色列 (Israel) 07 - xiaohe",
-        "🇮🇱 以色列 (Israel) 08 - xiaohe",
-        "🇮🇱 以色列 (Israel) 09 - xiaohe"
+        "🇮🇱 以色列 (Israel) 03 - xiaohe"
       ]
     },
     {
@@ -163,13 +82,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
-        "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe",
-        "🇮🇱 以色列 (Israel) 05 - xiaohe",
-        "🇮🇱 以色列 (Israel) 06 - xiaohe",
-        "🇮🇱 以色列 (Israel) 07 - xiaohe",
-        "🇮🇱 以色列 (Israel) 08 - xiaohe",
-        "🇮🇱 以色列 (Israel) 09 - xiaohe"
+        "🇮🇱 以色列 (Israel) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
