@@ -13,21 +13,17 @@
     {
       "type": "vless",
       "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
-      "server": "34.51.83.115",
-      "server_port": 443,
-      "uuid": "9ad81959-02c6-4679-a419-2af6a16ca07a",
+      "server": "45.134.9.133",
+      "server_port": 8443,
+      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA",
-          "short_id": "dcabbf24adf88abc"
-        }
+        "server_name": "ul-mexico1.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {

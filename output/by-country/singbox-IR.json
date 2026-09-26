@@ -15,7 +15,7 @@
         "server_name": "amazon.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
