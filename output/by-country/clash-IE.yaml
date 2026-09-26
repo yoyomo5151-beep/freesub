@@ -5,53 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 89.116.180.30
-  port: 8880
+  server: 50.7.5.187
+  port: 443
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime09.workers.dev
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ireland-new-ded1.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 18.169.126.60
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  server: 18.169.126.60
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  server: 18.169.126.60
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  server: 35.176.47.30
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
-  server: 35.176.47.30
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 07 - xiaohe
-  server: 35.176.47.30
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 08 - xiaohe
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -63,17 +27,7 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
-  client-fingerprint: safari
-- name: 🇮🇪 爱尔兰 (Ireland) 09 - xiaohe
-  server: ireland-new-ded1.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ireland-new-ded1.failspace.top
-  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,13 +35,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 07 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 08 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,12 +42,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 07 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 08 - xiaohe
-  - 🇮🇪 爱尔兰 (Ireland) 09 - xiaohe
 rules:
 - MATCH,PROXIES

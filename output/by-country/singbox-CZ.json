@@ -6,33 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "194.87.59.26",
-      "server_port": 2085,
-      "uuid": "720814fb-e38e-4570-97a7-c5df60352d37",
+      "server": "153.76.185.104",
+      "server_port": 3090,
+      "uuid": "6bd9b04b-17de-4f05-b8b8-e5f2a0a649c1",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "13.143.181.220",
-      "server_port": 443,
-      "uuid": "7a8d2c3f-d6dd-0004-81d8-cff23d8364ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "msk1.maxtelemost.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38",
-          "short_id": ""
-        }
       }
     },
     {
@@ -40,16 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

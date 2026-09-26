@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.37",
+      "server": "82.198.246.9",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -23,7 +23,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -33,12 +33,25 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "server": "172.105.169.70",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "172.105.169.70",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ]
     },
     {
@@ -46,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

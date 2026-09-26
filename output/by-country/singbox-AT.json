@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -41,28 +41,7 @@
       "tls": {
         "enabled": true,
         "server_name": "filesconvert.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
-      "server": "zcsagftt.selqora.ir",
-      "server_port": 51595,
-      "uuid": "a5f3e491-23aa-4293-a37a-93b20796adc2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw",
-          "short_id": "913175efbe9ddb1d"
-        }
+        "insecure": false
       }
     },
     {
@@ -72,8 +51,7 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
       ]
     },
     {
@@ -82,8 +60,7 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

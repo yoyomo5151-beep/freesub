@@ -5,36 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 185.47.254.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
-    short-id: 6c059ecfddf9b179
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
-  server: 45.134.9.133
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  tls: true
-  servername: ul-mexico1.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
   server: 45.164.20.114
   port: 10226
   udp: true
   type: vless
   uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: 34.51.83.115
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  tls: true
+  reality-opts:
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+    short-id: dcabbf24adf88abc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
   - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
-  - 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
   - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
-  - 🇲🇽 墨西哥 (Mexico) 03 - xiaohe
 rules:
 - MATCH,PROXIES
