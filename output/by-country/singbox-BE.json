@@ -4,12 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16307,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "server": "34.79.178.1",
+      "server_port": 443,
+      "uuid": "51e493d4-b275-45e0-a714-e014f40b3c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA",
+          "short_id": "95ae4a39d3933191"
+        }
+      }
     },
     {
       "type": "selector",
