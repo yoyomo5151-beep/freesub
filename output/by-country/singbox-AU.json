@@ -57,7 +57,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -75,7 +75,7 @@
       "tls": {
         "enabled": true,
         "server_name": "rmgyvpn.rest",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
