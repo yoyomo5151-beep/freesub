@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -75,6 +75,22 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 05 - xiaohe",
+      "server": "assets-de2.pleiades.codes",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-de2.pleiades.codes",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -82,7 +98,8 @@
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
         "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe"
+        "🇮🇱 以色列 (Israel) 04 - xiaohe",
+        "🇮🇱 以色列 (Israel) 05 - xiaohe"
       ]
     },
     {
@@ -92,7 +109,8 @@
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
         "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe"
+        "🇮🇱 以色列 (Israel) 04 - xiaohe",
+        "🇮🇱 以色列 (Israel) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

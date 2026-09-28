@@ -5,28 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: ccs2g.pai50288.uk
+  server: 104.21.50.18
   port: 443
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: 9fa6d846-5961-8e0e-ce27-77de00000000
   tls: true
-  servername: ccs2g.pai50288.uk
+  servername: fancy-wind-799d.cloudneryacc.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: fancy-wind-799d.cloudneryacc.workers.dev
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: us7-2.998998.best
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  tls: true
+  servername: server9.9966338.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /imnotarealherox
+    headers:
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
 rules:
 - MATCH,PROXIES
