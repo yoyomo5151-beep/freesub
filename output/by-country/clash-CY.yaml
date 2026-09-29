@@ -17,61 +17,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 45.86.60.210
-  port: 443
-  udp: true
-  type: vless
-  uuid: ae0d0211-b7dc-461d-9d41-1eb224876f30
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 13171b0dd8985179
-  servername: ee2.responsiblecare.uk
-  client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: ee2.responsiblecare.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: ae0d0211-b7dc-461d-9d41-1eb224876f30
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 13171b0dd8985179
-  servername: ee2.responsiblecare.uk
-  client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   server: 5.253.28.240
-  port: 2443
-  udp: true
-  type: vless
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
-  tls: true
-  reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
-  servername: deepl.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
-  server: 5.253.42.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
-    short-id: c1e3d5d4
-  servername: india.letsconnectpoint.com
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  server: 5.253.28.218
   port: 40443
   udp: true
   type: vless
@@ -82,8 +28,23 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  server: 5.253.28.218
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  tls: true
+  reality-opts:
+    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+    short-id: 92c32de179e5d908
+  servername: deepl.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
   server: xjp1.mangshe.xyz
   port: 2060
   udp: true
@@ -100,9 +61,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,8 +70,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
 rules:
 - MATCH,PROXIES

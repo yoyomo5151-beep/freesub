@@ -12,6 +12,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇳🇴 挪威 (Norway) 02 - xiaohe
+  server: 80.242.57.97
+  port: 1
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9qGcNiZj4uCi7DGSjxlg5Q
+- name: 🇳🇴 挪威 (Norway) 03 - xiaohe
   server: 46.29.238.88
   port: 40443
   udp: true
@@ -22,14 +29,7 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
     short-id: f7b2
   servername: deepl.com
-  client-fingerprint: qq
-- name: 🇳🇴 挪威 (Norway) 03 - xiaohe
-  server: 80.242.57.97
-  port: 1
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9qGcNiZj4uCi7DGSjxlg5Q
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
