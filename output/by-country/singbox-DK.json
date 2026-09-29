@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇴🇲 OM 01 - xiaohe",
-      "server": "130.94.81.180",
-      "server_port": 18415,
-      "method": "aes-128-gcm",
-      "password": "b667234b8d2e7eb34444857ea3a9b18a"
+      "type": "vmess",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16305,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇴🇲 OM 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇴🇲 OM 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

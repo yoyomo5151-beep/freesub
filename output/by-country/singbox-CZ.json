@@ -6,22 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "95.85.241.239",
-      "server_port": 443,
-      "uuid": "78571e63-1236-4c60-862a-70b7624dfa36",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "originsw239.aktanow.shop",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nf9hAhB_OqveSsgdqqx7EW0FSoT4XNN_EzfD8lXVDVo",
-          "short_id": "a1b2c3d4e5f6"
-        }
+      "server": "153.76.185.100",
+      "server_port": 3090,
+      "uuid": "e8b3f952-cd1b-4881-872e-b8d03399a6df",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
