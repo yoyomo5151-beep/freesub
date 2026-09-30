@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
   server: free.sahanwickramasinghe.me
   port: 80
