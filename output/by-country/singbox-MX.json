@@ -4,25 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "45.134.9.133",
-      "server_port": 8443,
-      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
-      "tls": {
-        "enabled": true,
-        "server_name": "ul-mexico1.09vpn.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "vless",
       "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
-      "server": "34.51.119.243",
+      "server": "34.51.23.2",
       "server_port": 443,
       "uuid": "79bc7b01-6e4e-4365-a120-fefac8182bd9",
       "tls": {
