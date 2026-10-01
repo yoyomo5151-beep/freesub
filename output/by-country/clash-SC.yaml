@@ -16,66 +16,18 @@ proxies:
     public-key: EHQEopoNqm2q8R2uu8ffAIpI-k2q-9Z5RUWafETWVGs
     short-id: b7e4a1c9d3f60528
   servername: www.universityofcalifornia.edu
-  client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 104.18.39.218
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 172.64.229.170
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
-  server: 45.207.207.25
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 rules:
 - MATCH,PROXIES

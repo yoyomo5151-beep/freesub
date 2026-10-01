@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com
-  port: 443
+  server: az-1.linkaa.xyz
+  port: 53617
   udp: true
-  type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: 44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com
-  skip-cert-verify: false
+  type: vmess
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /game/resources
+    headers:
+      Host: az-1.linkaa.xyz
 proxy-groups:
 - name: PROXIES
   type: select
