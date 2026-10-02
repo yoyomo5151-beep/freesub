@@ -5,18 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: free.sahanwickramasinghe.me
-  port: 80
-  udp: true
-  type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
-  server: trackydev.site
+  server: 140.245.120.16
   port: 443
   udp: true
   type: vless
@@ -24,6 +13,17 @@ proxies:
   tls: true
   servername: trackydev.site
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: trackydev.site
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
+  server: free.sahanwickramasinghe.me
+  port: 80
+  udp: true
+  type: vless
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   network: ws
   ws-opts:
     path: /
