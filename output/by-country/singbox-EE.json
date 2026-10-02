@@ -11,7 +11,7 @@
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
+        "server_name": "109.206.241.10",
         "insecure": true
       }
     },
@@ -37,14 +37,35 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-      "server": "143.246.41.123",
+      "server": "212.87.190.36",
+      "server_port": 443,
+      "uuid": "a15d1b88-e3f4-4f4d-9c04-462a2965a60a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee174.mech-pro.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+          "short_id": "16e0f049"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "server": "ee.h1cloud.net",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
@@ -63,7 +84,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
       "server": "93.89.220.37",
       "server_port": 443,
       "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
@@ -73,7 +94,7 @@
         "server_name": "ibm.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -91,7 +112,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe"
       ]
     },
     {
@@ -102,7 +124,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

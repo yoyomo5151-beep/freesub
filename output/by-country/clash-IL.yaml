@@ -18,16 +18,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 34.165.56.30
+  server: 185.95.231.233
   port: 443
   udp: true
   type: vless
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-    short-id: fffff8acddadcac3
-  servername: www.cloudflare.com
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

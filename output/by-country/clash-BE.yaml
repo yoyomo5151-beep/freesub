@@ -17,33 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  server: 35.195.122.169
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
-  tls: true
-  reality-opts:
-    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
-    short-id: 68e97022627fa882
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇪 比利时 (Belgium) 03 - xiaohe
-  server: 172.67.209.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c30000001b
-  tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 04 - xiaohe
   server: 34.156.242.126
   port: 443
   udp: true
@@ -62,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 比利时 (Belgium) 01 - xiaohe
   - 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
-  - 🇧🇪 比利时 (Belgium) 04 - xiaohe
 rules:
 - MATCH,PROXIES
