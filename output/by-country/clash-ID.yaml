@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16298
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -15,8 +23,8 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
+  client-fingerprint: edge
+- name: 🇮🇩 印尼 (Indonesia) 03 - xiaohe
   server: 103.172.197.2
   port: 29172
   udp: true
@@ -27,9 +35,9 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: random
-- name: 🇮🇩 印尼 (Indonesia) 03 - xiaohe
-  server: 188.114.97.6
+  client-fingerprint: ios
+- name: 🇮🇩 印尼 (Indonesia) 04 - xiaohe
+  server: 104.21.70.21
   port: 443
   udp: true
   type: trojan
@@ -47,6 +55,7 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 03 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +64,6 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 03 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 04 - xiaohe
 rules:
 - MATCH,PROXIES

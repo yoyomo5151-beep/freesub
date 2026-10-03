@@ -14,41 +14,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 212.87.190.36
-  port: 443
-  udp: true
-  type: vless
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
-  servername: ee174.mech-pro.online
-  client-fingerprint: qq
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: 163.245.52.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  servername: d3-ee1.cloud-cdn.xyz
-  client-fingerprint: edge
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: 94.183.170.135
   port: 8443
   udp: true
   type: vless
@@ -56,7 +21,17 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 89.125.13.202
   port: 443
   udp: true
@@ -69,6 +44,30 @@ proxies:
     short-id: ad6e08b22389abd2
   servername: d3-ee1.cloud-cdn.xyz
   client-fingerprint: edge
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 212.87.190.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: ee174.mech-pro.online
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: ee.monkora.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   server: 93.89.220.37
   port: 443
@@ -83,19 +82,6 @@ proxies:
   servername: ibm.com
   client-fingerprint: edge
 - name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 5.181.202.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: eston3.o4ka-internet.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
   server: 77.72.85.246
   port: 8443
   udp: true
@@ -110,7 +96,33 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
+  server: 163.245.52.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
+    short-id: ad6e08b22389abd2
+  servername: d3-ee1.cloud-cdn.xyz
+  client-fingerprint: edge
 - name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  server: 5.181.202.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: eston3.o4ka-internet.com
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -137,6 +149,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -152,5 +165,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
@@ -23,33 +23,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe",
-      "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe",
+      "server": "195.238.126.84",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
@@ -63,9 +63,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 08 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
@@ -76,25 +76,12 @@
       "password": "M3t2ZEQcMGRWBjRa"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 10 - xiaohe",
-      "server": "litva1.ali-bard.online",
-      "server_port": 443,
-      "uuid": "4643976f-85fa-40cf-9e58-ea28b50f253b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "litva1.ali-bard.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "vless",
@@ -121,6 +108,48 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 12 - xiaohe",
+      "server": "62.77.158.1",
+      "server_port": 443,
+      "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "online.1c.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs",
+          "short_id": "6a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 13 - xiaohe",
+      "server": "litva1.ali-bard.online",
+      "server_port": 443,
+      "uuid": "4643976f-85fa-40cf-9e58-ea28b50f253b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "litva1.ali-bard.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -135,7 +164,9 @@
         "🇱🇹 立陶宛 (Lithuania) 08 - xiaohe",
         "🇱🇹 立陶宛 (Lithuania) 09 - xiaohe",
         "🇱🇹 立陶宛 (Lithuania) 10 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 11 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 11 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 12 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 13 - xiaohe"
       ]
     },
     {
@@ -152,7 +183,9 @@
         "🇱🇹 立陶宛 (Lithuania) 08 - xiaohe",
         "🇱🇹 立陶宛 (Lithuania) 09 - xiaohe",
         "🇱🇹 立陶宛 (Lithuania) 10 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 11 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 11 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 12 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 13 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
