@@ -4,30 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - xiaohe
-  server: 2.26.80.235
-  port: 443
+- name: 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
+  server: 31.77.227.6
+  port: 52006
   udp: true
   type: vless
-  uuid: cb0ccf90-0e8f-4621-b042-4e35c797de2b
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: _gjcl5q-hkJIFmKYSY9DbBcSiBHK3YUAKOfZzZqnkT8
-    short-id: c17f1d8951b3bf90
-  servername: dl.google.com
+  servername: bigdick.gamegrow.ru
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
