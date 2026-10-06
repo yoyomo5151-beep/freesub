@@ -11,7 +11,7 @@
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
+        "server_name": "russiapower.accesscam.org",
         "insecure": true
       }
     },
@@ -27,7 +27,7 @@
         "server_name": "d3-ee1.cloud-cdn.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -55,11 +55,7 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
@@ -71,36 +67,23 @@
       "tls": {
         "enabled": true,
         "server_name": "fdghyt.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-      "server": "143.246.41.146",
-      "server_port": 25895,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "short_id": "a73f0410d728c823"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "fdghyt.com"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
       "server": "163.245.52.91",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
@@ -110,7 +93,7 @@
         "server_name": "d3-ee1.cloud-cdn.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -129,8 +112,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe"
       ]
     },
     {
@@ -142,8 +124,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

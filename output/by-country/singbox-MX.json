@@ -4,26 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "147.78.1.234",
-      "server_port": 16673,
-      "method": "aes-128-gcm",
-      "password": "67c57ae584eecd70396fcd7ca7521130"
+      "server": "211.20.156.191",
+      "server_port": 28121,
+      "password": "i99Cef",
+      "tls": {
+        "enabled": true,
+        "server_name": "ctldl.windowsupdate.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇲🇽 墨西哥 (Mexico) 02 - xiaohe",
+      "server": "64.177.90.30",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
