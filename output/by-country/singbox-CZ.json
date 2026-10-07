@@ -4,29 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "ade.axiomed.ir",
+      "server": "cz.h2.cleanersaz.help",
       "server_port": 443,
-      "uuid": "77702cd2-6a11-40f4-a817-1efeae6f6889",
+      "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
       "tls": {
         "enabled": true,
-        "server_name": "t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560",
-        "headers": {
-          "Host": "t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev"
-        }
+        "server_name": "cz.h2.cleanersaz.help",
+        "insecure": true
       }
     },
     {
